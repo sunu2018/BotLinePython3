@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 from linepy import *
 from datetime import datetime
 from time import sleep
@@ -7,7 +8,9 @@ from humanfriendly import format_timespan, format_size, format_number, format_le
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse,timeit,data,atexit
 from gtts import gTTS
 from googletrans import Translator
+
 botStart = time.time()
+
 cl = LINE()
 cl.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
@@ -16,14 +19,17 @@ ghost = LINE()
 ghost.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
 ghost.log("Channel Token : " + str(channelToken))
+
 kicker01 = LINE()
 kicker01.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
 kicker01.log("Channel Token : " + str(channelToken))
+
 kicker02 = LINE()
 kicker02.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
 kicker02.log("Channel Token : " + str(channelToken))
+
 oepoll = OEPoll(cl)
 readOpen = codecs.open("read.json","r","utf-8")
 settingsOpen = codecs.open("temp.json","r","utf-8")
