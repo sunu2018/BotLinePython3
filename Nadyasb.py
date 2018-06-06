@@ -101,7 +101,7 @@ def helpmessage():
                   "╠➥ DetectMention「On/Off」" + "\n" + \
                   "║" + "\n" + \
                   "╠✪〘 Self 〙✪═════════" + "\n" + \
-                  "╠➥ Me" + "\n" + \
+                  "╠➥ กุเอง" + "\n" + \
                   "╠➥ MyMid" + "\n" + \
                   "╠➥ MyName" + "\n" + \
                   "╠➥ MyBio" + "\n" + \
@@ -361,7 +361,7 @@ def lineBot(op):
                 if text is None:
                     return
 #==============================================================================#
-                if text.lower() == 'help':
+                if text.lower() == 'คำสั่ง':
                     helpMessage = helpmessage()
                     nadya.sendMessage(to, str(helpMessage))
                     nadya.sendContact(to, "u14f64e139a3817afaabe27d237afb36b")
@@ -468,7 +468,7 @@ def lineBot(op):
                     settings["copy"] = True
                     nadya.sendMessage(to, "Kirim Contact Yang Mau Di Copy")
 #==============================================================================#
-                elif text.lower() == 'me':
+                elif text.lower() == 'กุเอง':
                     sendMessageWithMention(to, nadyaMID)
                     nadya.sendContact(to, nadyaMID)
                 elif text.lower() == 'mymid':
